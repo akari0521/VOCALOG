@@ -17,7 +17,7 @@
     "id": "senbonzakura-miku-kurousa",
     "title": "千本桜",
     "titleKana": "せんぼんざくら",
-    "producerId": "kuroUsa",
+    "producerId": "kuro_usa_p",
     "vocalId": "hatsune-miku",
     "youtubeId": "https://youtu.be/shs0rAiwsGQ?si=b-A0j48AYal36fbP",
     "tags": ["初音ミク", "ロック", "和風", "VOCALOID"],
@@ -28,5 +28,6 @@
     "streamingLink": ""
   }
 ]
+
 
 
