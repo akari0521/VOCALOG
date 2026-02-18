@@ -2,6 +2,7 @@
   {
     "id": "kafu",
     "name": "可不 (KAFU)",
+    "nameKana": "かふ",
     "engine": "CeVIO AI",
     "released": "2021-07-07",
     "developer": "KAMITSUBAKI STUDIO",
@@ -13,3 +14,4 @@
     }
   }
 ]
+
