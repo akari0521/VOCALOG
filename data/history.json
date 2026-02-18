@@ -14,7 +14,7 @@
     "title": "初音ミク 発売",
     "summary": "2007年8月31日、クリプトン・フューチャー・メディアより「初音ミク」発売（VOCALOID2）。",
     "links": [
-      "https://blog.piapro.net"
+      "https://ec.crypton.co.jp/product/detail/27720"
     ]
   },
   {
@@ -29,21 +29,19 @@
   {
     "id": "2011-senbonzakura-release",
     "year": 2011,
-    "title": "黒うさP「千本桜」公開",
+    "title": "黒うさP「千本桜」ニコニコ公開",
     "summary": "2011年9月17日、ニコニコ動画にて「千本桜 (feat. 初音ミク)」公開。",
     "links": [
-      "https://www.nicovideo.jp/watch/sm15630734",
+      "https://www.nicovideo.jp/watch/sm15630734"
     ]
   },
   {
-    "id": "2014-senbonzakura-release",
+    "id": "2014-senbonzakura-youtube",
     "year": 2014,
-    "title": "黒うさP「千本桜」公開",
-    "summary": "2014年12月2日、YouTubeにて「千本桜 (feat. 初音ミク)」公開。",
+    "title": "黒うさP「千本桜」YouTube公開",
+    "summary": "2014年12月2日、YouTube公式チャンネルにて公開。",
     "links": [
       "https://youtu.be/shs0rAiwsGQ"
     ]
   }
 ]
-
-
