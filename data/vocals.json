@@ -1,11 +1,15 @@
 [
   {
-    "id": "miku",
-    "name": "初音ミク",
-    "engine": "VOCALOID",
-    "summary": "ボカロ文化の象徴的存在",
+    "id": "kafu",
+    "name": "可不 (KAFU)",
+    "engine": "CeVIO AI",
+    "released": "2021-07-07",
+    "developer": "KAMITSUBAKI STUDIO",
+    "voiceProvider": "花譜",
+    "summary": "音楽的同位体プロジェクトから誕生したCeVIO AI音声合成ソフト。花譜の声を元に制作され、繊細で感情表現豊かな歌声が特徴。",
     "links": {
-      "official": "https://example.com"
+      "official": "https://kaf-u.kamitsubaki.jp/",
+      "wikipedia": "https://ja.wikipedia.org/wiki/%E5%8F%AF%E4%B8%8D"
     }
   }
 ]
