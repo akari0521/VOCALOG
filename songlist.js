@@ -12,6 +12,8 @@ let songs = []
 let producers = new Map()
 let vocals = new Map()
 
+const safe = (v)=> v == null ? "" : String(v)
+
 function buildTagOptions(){
   const set = new Set()
   for(const s of songs){
@@ -24,33 +26,47 @@ function buildTagOptions(){
     opt.textContent = t
     tagSel.appendChild(opt)
   }
+
+  // かな順追加
+  if(!Array.from(sortSel.options).some(o=>o.value==="kana")){
+    const opt = document.createElement("option")
+    opt.value = "kana"
+    opt.textContent = "かな順"
+    sortSel.appendChild(opt)
+  }
 }
 
 function sortSongs(items){
   const mode = sortSel.value
   const copy = [...items]
-  if(mode === "az"){
-    copy.sort((a,b)=> (a.title||"").localeCompare(b.title||"","ja"))
+
+  if(mode === "kana"){
+    copy.sort((a,b)=>{
+      const ak = safe(a.titleKana || a.title)
+      const bk = safe(b.titleKana || b.title)
+      return ak.localeCompare(bk,"ja")
+    })
+  }else if(mode === "az"){
+    copy.sort((a,b)=> safe(a.title).localeCompare(safe(b.title),"ja"))
   }else if(mode === "old"){
-    copy.sort((a,b)=> (a.released||"").localeCompare(b.released||""))
+    copy.sort((a,b)=> safe(a.released).localeCompare(safe(b.released)))
   }else{
-    copy.sort((a,b)=> (b.released||"").localeCompare(a.released||""))
+    copy.sort((a,b)=> safe(b.released).localeCompare(safe(a.released)))
   }
   return copy
 }
 
 function card(s){
-  const p = producers.get(s.producerId)?.name || "不明"
-  const v = vocals.get(s.vocalId)?.name || "不明"
-  const tags = (s.tags || []).slice(0,8).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join("")
+  const pObj = producers.get(s.producerId) || {}
+  const vObj = vocals.get(s.vocalId) || {}
+
   return `
     <a class="card cardLink" href="./song.html?id=${encodeURIComponent(s.id)}">
       <h2 class="title">${escapeHtml(s.title)}</h2>
-      <p class="muted">${escapeHtml(p)} / ${escapeHtml(v)}</p>
+      ${s.titleKana ? `<p class="muted">ふりがな：${escapeHtml(s.titleKana)}</p>` : ""}
+      <p class="muted">${escapeHtml(pObj.name||"不明")} / ${escapeHtml(vObj.name||"不明")}</p>
       ${s.released ? `<p class="muted">🗓 ${escapeHtml(s.released)}</p>` : ""}
       ${s.summary ? `<p class="muted">${escapeHtml(s.summary)}</p>` : ""}
-      <div class="tags">${tags}</div>
-      <p class="muted">開く →</p>
     </a>
   `
 }
@@ -65,9 +81,17 @@ function filter(){
   const tag = tagSel.value
 
   let items = songs.filter(s=>{
-    const p = producers.get(s.producerId)?.name || ""
-    const v = vocals.get(s.vocalId)?.name || ""
-    const target = norm(`${s.title} ${p} ${v} ${(s.tags||[]).join(" ")} ${s.released||""} ${s.summary||""}`)
+    const p = producers.get(s.producerId) || {}
+    const v = vocals.get(s.vocalId) || {}
+
+    const target = norm([
+      s.title, s.titleKana,
+      p.name, p.nameKana,
+      v.name, v.nameKana,
+      ...(s.tags||[]),
+      s.released, s.summary
+    ].map(safe).join(" "))
+
     const hitWord = word ? target.includes(word) : true
     const hitTag = tag ? (s.tags||[]).includes(tag) : true
     return hitWord && hitTag
@@ -78,21 +102,17 @@ function filter(){
 }
 
 async function main(){
-  try{
-    const [sData, pData, vData] = await Promise.all([
-      loadJson("./data/songs.json"),
-      loadJson("./data/producers.json"),
-      loadJson("./data/vocals.json"),
-    ])
-    songs = sData
-    producers = new Map(pData.map(p=>[p.id,p]))
-    vocals = new Map(vData.map(v=>[v.id,v]))
+  const [sData,pData,vData] = await Promise.all([
+    loadJson("./data/songs.json"),
+    loadJson("./data/producers.json"),
+    loadJson("./data/vocals.json")
+  ])
+  songs = sData
+  producers = new Map(pData.map(p=>[p.id,p]))
+  vocals = new Map(vData.map(v=>[v.id,v]))
 
-    buildTagOptions()
-    filter()
-  }catch(err){
-    document.body.innerHTML = `<div style="padding:16px;font-family:sans-serif;">読み込み失敗: ${escapeHtml(err.message)}</div>`
-  }
+  buildTagOptions()
+  filter()
 }
 
 main()
