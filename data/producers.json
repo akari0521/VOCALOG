@@ -1,18 +1,32 @@
 [
   {
-    "id": "atsu-mizuno",
-    "name": "水野あつ",
-    "nameKana": "みずのあつ",
-    "aliases": [],
-    "activeYears": "2020年代-",
-    "summary": "透明感のあるメロディと繊細な感情表現を特徴とするボカロP。代表曲に「生きる」などがある。",
-    "links": {
-      "youtube": "https://www.youtube.com/@atsu361",
-      "x": "https://twitter.com/atsu361",
-      "website": ""
-    }
+  "id": "atsu_mizuno",
+  "name": "水野あつ",
+  "nameKana": "みずのあつ",
+  "aliases": [],
+  "activeYears": "2018年代-",
+  "summary": "繊細で透明感のあるメロディと、心情を丁寧に描く歌詞を特徴とするボカロP。代表曲に「生きる」などがある。",
+  "links": {
+    "youtube": "https://www.youtube.com/@atsu361",
+    "x": "",
+    "website": ""
   }
+},
+    {
+  "id": "kuro_usa_p",
+  "name": "黒うさP",
+  "nameKana": "くろうさぴー",
+  "aliases": ["WhiteFlame"],
+  "activeYears": "2008年代-",
+  "summary": "和風テイストと物語性の強い歌詞、美しいメロディラインを特徴とするボカロP。代表曲に「千本桜」などがある。",
+  "links": {
+    "youtube": "https://www.youtube.com/@WhiteFlameOfficial",
+    "x": "",
+    "website": ""
+  }
+}
 ]
+
 
 
 
