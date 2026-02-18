@@ -3,15 +3,30 @@
     "id": "ikiru-kafu-atsu",
     "title": "生きる",
     "titleKana": "いきる",
-    "producerId": "atsu-mizuno",
+    "producerId": "atsu_mizuno",
     "vocalId": "kafu",
-    "youtubeId": "91R2hdV_-aQ",
+    "youtubeId": "https://youtu.be/91R2hdV_-aQ?si=Q8Yx9pjUaSqyzSpj",
     "tags": ["可不", "バラード", "CeVIO AI"],
     "released": "2021-07-22",
     "summary": "水野あつによる「生きる」(feat. 可不)。静かな旋律と切実な歌詞が特徴の代表曲。",
     "lyricsLink": "https://utaten.com/lyric/nm21072605",
     "karaokeLink": "https://youtu.be/Z4605775KcE",
     "streamingLink": ""
+  },
+  {
+    "id": "senbonzakura-miku-kurousa",
+    "title": "千本桜",
+    "titleKana": "せんぼんざくら",
+    "producerId": "kuroUsa",
+    "vocalId": "hatsune-miku",
+    "youtubeId": "https://youtu.be/shs0rAiwsGQ?si=b-A0j48AYal36fbP",
+    "tags": ["初音ミク", "ロック", "和風", "VOCALOID"],
+    "released": "2011-09-17",
+    "summary": "黒うさP（WhiteFlame）による「千本桜」(feat. 初音ミク)。和風ロックサウンドと疾走感あふれるメロディで大ヒットした代表的なボカロ楽曲。",
+    "lyricsLink": "https://utaten.com/lyric/nm21072605",
+    "karaokeLink": "https://youtu.be/_44thQJVxqk?si=ok5syD0b4YKmSChs",
+    "streamingLink": ""
   }
 ]
+
 
