@@ -1,26 +1,17 @@
-// theme.js
 const root = document.documentElement
 const key = "vocalog-theme"
 
-function setIconByTheme(theme) {
+function applyTheme(t){
+  root.setAttribute("data-theme", t)
+  localStorage.setItem(key, t)
   const btn = document.getElementById("themeToggle")
-  if (!btn) return
-  // ダーク中は「ライトに戻す」＝太陽
-  btn.textContent = (theme === "dark") ? "☀️" : "🌙"
+  if(btn) btn.textContent = (t === "dark") ? "☀️" : "🌙"
 }
 
-function applyTheme(theme) {
-  root.setAttribute("data-theme", theme)
-  localStorage.setItem(key, theme)
-  setIconByTheme(theme)
-}
-
-// 初期テーマ適用
 applyTheme(localStorage.getItem(key) || "light")
 
-// クリックで切り替え（ボタンが後から出てもOK）
-document.addEventListener("click", (e) => {
-  if (e.target && e.target.id === "themeToggle") {
+document.addEventListener("click", (e)=>{
+  if(e.target && e.target.id === "themeToggle"){
     const now = root.getAttribute("data-theme") || "light"
     applyTheme(now === "dark" ? "light" : "dark")
   }
