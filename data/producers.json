@@ -1,0 +1,13 @@
+[
+  {
+    "id": "hachi",
+    "name": "ハチ",
+    "aliases": ["米津玄師"],
+    "activeYears": "2009-",
+    "summary": "独特な言葉選びとリズム感で支持を広げた",
+    "links": {
+      "youtube": "https://example.com",
+      "x": "https://example.com"
+    }
+  }
+]
