@@ -22,6 +22,7 @@
   {
     "id": "2021-ikiru-release",
     "year": 2021,
+    "date": "2021-07-22",
     "title": "水野あつ「生きる」公開",
     "summary": "YouTubeにて「生きる (feat. 可不)」が公開される。",
     "links": [
@@ -31,6 +32,7 @@
     {
     "id": "2014-senbonzakura-release",
     "year": 2014,
+    "date": "2014-12-02",
     "title": "黒うさＰ「千本桜」公開",
     "summary": "YouTubeにて「千本桜 (feat. 初音ミク)」が公開される。",
     "links": [
@@ -38,4 +40,5 @@
     ]
   }
 ]
+
 
