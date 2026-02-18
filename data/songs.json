@@ -5,13 +5,14 @@
     "titleKana": "いきる",
     "producerId": "atsu_mizuno",
     "vocalId": "kafu",
-    "youtubeId": "https://youtu.be/91R2hdV_-aQ?si=Q8Yx9pjUaSqyzSpj",
+    "youtubeId": "https://youtu.be/91R2hdV_-aQ",
+    "niconicoId": "https://www.nicovideo.jp/watch/sm39067316",
     "tags": ["可不", "バラード", "CeVIO AI"],
     "released": "2021-07-22",
-    "summary": "水野あつによる「生きる」(feat. 可不)。繊細なピアノと感情的なメロディが印象的なバラード楽曲。",
-    "lyricsLink": "https://utaten.com/lyric/nm21072605",
+    "summary": "水野あつによるバラード楽曲。",
+    "lyricsLink": "https://utaten.com/lyric/mi21072101/",
     "karaokeLink": "https://youtu.be/Z4605775KcE",
-    "streamingLink": ""
+    "streamingLink": "https://open.spotify.com/search/生きる%20水野あつ"
   },
   {
     "id": "senbonzakura-miku-kurousa",
@@ -19,17 +20,13 @@
     "titleKana": "せんぼんざくら",
     "producerId": "kuro_usa_p",
     "vocalId": "hatsune-miku",
-    "youtubeId": "https://youtu.be/shs0rAiwsGQ?si=b-A0j48AYal36fbP",
+    "youtubeId": "https://youtu.be/shs0rAiwsGQ",
+    "niconicoId": "https://www.nicovideo.jp/watch/sm15630734",
     "tags": ["初音ミク", "ロック", "和風", "VOCALOID"],
     "released": "2011-09-17",
-    "summary": "黒うさP（WhiteFlame）による「千本桜」(feat. 初音ミク)。和風ロックサウンドと疾走感あふれるメロディで大ヒットした代表的なボカロ楽曲。",
-    "lyricsLink": "https://utaten.com/lyric/jb51202055",
-    "karaokeLink": "https://youtu.be/_44thQJVxqk?si=ok5syD0b4YKmSChs",
-    "streamingLink": ""
+    "summary": "黒うさPによる和風ロック楽曲。",
+    "lyricsLink": "https://utaten.com/lyric/jb51109110/",
+    "karaokeLink": "https://youtu.be/_44thQJVxqk",
+    "streamingLink": "https://open.spotify.com/search/千本桜%20黒うさP"
   }
 ]
-
-
-
-
-
