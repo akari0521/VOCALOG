@@ -17,16 +17,9 @@ document.addEventListener("click", (e)=>{
   }
 })
 
-// ヘッダーが後から生成されるので、出現した瞬間にアイコンを同期
 const observer = new MutationObserver(() => {
   const theme = root.getAttribute("data-theme") || "light"
   setIconByTheme(theme)
 })
 
 observer.observe(document.documentElement, { childList: true, subtree: true })
-
-// 念のためDOM完成でも同期
-document.addEventListener("DOMContentLoaded", () => {
-  const theme = root.getAttribute("data-theme") || "light"
-  setIconByTheme(theme)
-})
