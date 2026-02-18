@@ -7,26 +7,24 @@
     "released": "2021-07-07",
     "developer": "KAMITSUBAKI STUDIO",
     "voiceProvider": "花譜",
-    "summary": "音楽的同位体プロジェクトから誕生したCeVIO AI音声合成ソフト。花譜の声を元に制作され、繊細で感情表現豊かな歌声が特徴。",
+    "summary": "音楽的同位体プロジェクトから誕生した音声合成ソフト。",
     "links": {
       "official": "https://kaf-u.kamitsubaki.jp/",
-      "wikipedia": "https://ja.wikipedia.org/wiki/%E5%8F%AF%E4%B8%8D"
+      "wikipedia": "https://ja.wikipedia.org/wiki/可不"
     }
   },
-    {
-  "id": "hatsune-miku",
-  "name": "初音ミク (Hatsune Miku)",
-  "nameKana": "はつねみく",
-  "engine": "VOCALOID2（初代） / VOCALOID3 / VOCALOID4 / NT",
-  "released": "2007-08-31",
-  "developer": "クリプトン・フューチャー・メディア",
-  "voiceProvider": "藤田咲",
-  "summary": "バーチャル・シンガーとして世界的に人気を持つ音声合成ソフト。2007年にVOCALOID2として発売され、透明感のある高音とポップな声質が特徴。音楽文化やライブ演出、二次創作文化の発展に大きな影響を与えた。",
-  "links": {
-    "official": "https://piapro.net/",
-    "wikipedia": "https://ja.wikipedia.org/wiki/%E5%88%9D%E9%9F%B3%E3%83%9F%E3%82%AF"
+  {
+    "id": "hatsune-miku",
+    "name": "初音ミク (Hatsune Miku)",
+    "nameKana": "はつねみく",
+    "engine": "VOCALOID2 / VOCALOID3 / VOCALOID4 / NT",
+    "released": "2007-08-31",
+    "developer": "クリプトン・フューチャー・メディア",
+    "voiceProvider": "藤田咲",
+    "summary": "世界的に人気を持つバーチャル・シンガー。",
+    "links": {
+      "official": "https://piapro.net/",
+      "wikipedia": "https://ja.wikipedia.org/wiki/初音ミク"
+    }
   }
-}
 ]
-
-
