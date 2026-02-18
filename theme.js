@@ -16,10 +16,3 @@ document.addEventListener("click", (e)=>{
     applyTheme(now === "dark" ? "light" : "dark")
   }
 })
-
-const observer = new MutationObserver(() => {
-  const theme = root.getAttribute("data-theme") || "light"
-  setIconByTheme(theme)
-})
-
-observer.observe(document.documentElement, { childList: true, subtree: true })
