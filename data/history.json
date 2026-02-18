@@ -1,9 +1,20 @@
 [
   {
-    "id": "2007-miku",
-    "year": 2007,
-    "title": "初音ミク発売",
-    "summary": "ブームの起点になった出来事",
-    "links": ["https://example.com"]
+    "id": "2021-kafu-release",
+    "year": 2021,
+    "title": "CeVIO AI 可不 発売",
+    "summary": "音楽的同位体プロジェクトの一環として可不（KAFU）が発売される。",
+    "links": [
+      "https://kaf-u.kamitsubaki.jp/"
+    ]
+  },
+  {
+    "id": "2021-ikiru-release",
+    "year": 2021,
+    "title": "水野あつ「生きる」公開",
+    "summary": "YouTubeにて「生きる (feat. 可不)」が公開される。",
+    "links": [
+      "https://youtu.be/91R2hdV_-aQ"
+    ]
   }
 ]
