@@ -1,0 +1,11 @@
+[
+  {
+    "id": "miku",
+    "name": "初音ミク",
+    "engine": "VOCALOID",
+    "summary": "ボカロ文化の象徴的存在",
+    "links": {
+      "official": "https://example.com"
+    }
+  }
+]
