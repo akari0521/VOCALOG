@@ -7,13 +7,15 @@ const list = qs("list")
 const count = qs("count")
 
 let producers = []
+const safe = (v)=> v==null ? "" : String(v)
 
 function render(items){
   count.textContent = `${items.length} 人`
   list.innerHTML = items.map(p=>`
     <a class="card cardLink" href="./producer.html?id=${encodeURIComponent(p.id)}">
-      <h2 class="title">${escapeHtml(p.name)}</h2>
-      ${p.summary ? `<p class="muted">${escapeHtml(p.summary)}</p>` : `<p class="muted">詳細を見る →</p>`}
+      <h2>${escapeHtml(p.name)}</h2>
+      ${p.nameKana ? `<p class="muted">ふりがな：${escapeHtml(p.nameKana)}</p>` : ""}
+      ${p.summary ? `<p class="muted">${escapeHtml(p.summary)}</p>` : ""}
     </a>
   `).join("")
 }
@@ -22,20 +24,18 @@ function filter(){
   const word = norm(q.value.trim())
   const items = producers
     .filter(p=>{
-      const target = norm(`${p.name} ${(p.aliases||[]).join(" ")} ${p.activeYears||""} ${p.summary||""}`)
+      const target = norm([p.name,p.nameKana,...(p.aliases||[]),p.summary].map(safe).join(" "))
       return word ? target.includes(word) : true
     })
-    .sort((a,b)=> (a.name||"").localeCompare(b.name||"","ja"))
+    .sort((a,b)=> safe(a.nameKana||a.name).localeCompare(safe(b.nameKana||b.name),"ja"))
+
   render(items)
 }
 
 async function main(){
-  try{
-    producers = await loadJson("./data/producers.json")
-    filter()
-  }catch(err){
-    document.body.innerHTML = `<div style="padding:16px;font-family:sans-serif;">読み込み失敗: ${escapeHtml(err.message)}</div>`
-  }
+  producers = await loadJson("./data/producers.json")
+  filter()
 }
+
 main()
 q.addEventListener("input", filter)
