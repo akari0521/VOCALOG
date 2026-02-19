@@ -49,9 +49,23 @@ async function main(){
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>` : `<p class="muted">YouTube ID が未設定</p>`}
+
+      ${s.niconicoId ? `
+  <div style="margin-top:12px;">
+    <iframe
+      src="https://embed.nicovideo.jp/watch/${encodeURIComponent(
+        (String(s.niconicoId).match(/(sm\d+)/) || [])[1] || ""
+      )}"
+      title="niconico"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
+` : ""}
     `
   }catch(err){
     content.innerHTML = `<p>読み込み失敗: ${escapeHtml(err.message)}</p>`
   }
 }
 main()
+
