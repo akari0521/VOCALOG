@@ -9,7 +9,7 @@
     "voiceProvider": "花譜",
     "summary": "音楽的同位体プロジェクトから誕生した音声合成ソフト。",
     "links": {
-      "official": "https://kaf-u.kamitsubaki.jp/",
+      "official": "https://kaf-u.kamitsubaki.jp",
       "wikipedia": "https://ja.wikipedia.org/wiki/可不"
     }
   },
@@ -23,8 +23,9 @@
     "voiceProvider": "藤田咲",
     "summary": "世界的に人気を持つバーチャル・シンガー。",
     "links": {
-      "official": "https://piapro.net/",
+      "official": "https://blog.piapro.net",
       "wikipedia": "https://ja.wikipedia.org/wiki/初音ミク"
     }
   }
 ]
+
