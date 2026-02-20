@@ -1,6 +1,6 @@
 [
   {
-    "id": "atsu_mizuno",
+    "id": "atsu-mizuno",
     "name": "水野あつ",
     "nameKana": "みずのあつ",
     "aliases": [],
@@ -13,7 +13,7 @@
     }
   },
   {
-    "id": "kuro_usa_p",
+    "id": "kuro-usa-p",
     "name": "黒うさP",
     "nameKana": "くろうさぴー",
     "aliases": ["WhiteFlame"],
@@ -26,6 +26,7 @@
     }
   }
 ]
+
 
 
 
