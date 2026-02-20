@@ -3,7 +3,7 @@
     "id": "ikiru-kafu-atsu",
     "title": "生きる",
     "titleKana": "いきる",
-    "producerId": "atsu_mizuno",
+    "producerId": "atsu-mizuno",
     "vocalId": "kafu",
     "youtubeId": "91R2hdV_-aQ",
     "niconicoId": "",
@@ -18,7 +18,7 @@
     "id": "senbonzakura-miku-kurousa",
     "title": "千本桜",
     "titleKana": "せんぼんざくら",
-    "producerId": "kuro_usa_p",
+    "producerId": "kuro-usa-p",
     "vocalId": "hatsune-miku",
     "youtubeId": "shs0rAiwsGQ",
     "niconicoId": "sm15630734",
@@ -30,6 +30,7 @@
     "streamingLink": "https://open.spotify.com/intl-ja/track/38mUTswfszVFQ952r89AP8?si=5c6145b322f14626"
   }
 ]
+
 
 
 
