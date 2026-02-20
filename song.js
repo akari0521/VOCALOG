@@ -21,7 +21,10 @@ async function main(){
     document.title = `${s.title} - VOCALOG`
 
     content.innerHTML = `
-      <h2 class="title">${escapeHtml(s.title)}</h2>
+      <h2 class="title">
+        ${escapeHtml(s.title)}
+        ${s.titleKana ? `<span class="reading">(${escapeHtml(s.titleKana)})</span>` : ""}
+      </h2>
       <p class="muted">
         ${p ? `<a class="link" href="./producer.html?id=${encodeURIComponent(p.id)}">${escapeHtml(p.name)}</a>` : "不明"}
         /
@@ -68,4 +71,5 @@ async function main(){
   }
 }
 main()
+
 
