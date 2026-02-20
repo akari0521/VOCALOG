@@ -24,8 +24,48 @@
       "x": "https://x.com/whiteflame_info",
       "website": ""
     }
+  },
+  {
+    "id": "deco27",
+    "name": "DECO*27",
+    "nameKana": "でこにーな",
+    "aliases": [],
+    "activeYears": "2008-",
+    "summary": "キャッチーで中毒性のあるメロディと現代的なポップサウンドが特徴のボカロP。",
+    "links": {
+      "youtube": "http://www.youtube.com/@DECO27",
+      "x": "https://x.com/deco27",
+      "website": ""
+    }
+  },
+  {
+    "id": "kz-livetune",
+    "name": "kz",
+    "nameKana": "",
+    "aliases": ["livetune"],
+    "activeYears": "2007-",
+    "summary": "透明感のあるエレクトロサウンドと洗練されたメロディが特徴のボカロP。",
+    "links": {
+      "youtube": "http://www.youtube.com/@kzlivetune",
+      "x": "https://x.com/kz_lt",
+      "website": ""
+    }
+  },
+  {
+    "id": "ryo-supercell",
+    "name": "ryo",
+    "nameKana": "りょう",
+    "aliases": ["supercell"],
+    "activeYears": "2007-",
+    "summary": "壮大でエモーショナルなメロディと物語性の強い歌詞が特徴のボカロP。",
+    "links": {
+      "youtube": "http://www.youtube.com/@spclryo2673",
+      "x": "https://x.com/ryo_spcl",
+      "website": ""
+    }
   }
 ]
+
 
 
 
