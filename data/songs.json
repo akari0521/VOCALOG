@@ -18,7 +18,7 @@
     "id": "senbonzakura-miku-kurousa",
     "title": "千本桜",
     "titleKana": "せんぼんざくら",
-    "producerId": "kuro-usa-p",
+    "producerId": "kurousa-p",
     "vocalId": "hatsune-miku",
     "youtubeId": "shs0rAiwsGQ",
     "niconicoId": "sm15630734",
@@ -28,8 +28,39 @@
     "lyricsLink": "https://utaten.com/lyric/jb51109110",
     "karaokeLink": "https://youtu.be/_44thQJVxqk",
     "streamingLink": "https://open.spotify.com/intl-ja/track/38mUTswfszVFQ952r89AP8?si=5c6145b322f14626"
+  },
+  {
+    "id": "hibana-miku-deco27",
+    "title": "ヒバナ",
+    "titleKana": "",
+    "producerId": "deco27",
+    "vocalId": "hatsune-miku",
+    "youtubeId": "hxSg2Ioz3LM",
+    "niconicoId": "",
+    "tags": ["初音ミク", "ロック", "エレクトロ", "VOCALOID"],
+    "released": "2017-08-04",
+    "summary": "DECO*27によるエレクトロロック楽曲。",
+    "lyricsLink": "https://utaten.com/lyric/sa17081004",
+    "karaokeLink": "https://youtu.be/_aIpGmSh4os",
+    "streamingLink": "https://open.spotify.com/intl-ja/track/2Rn8WVUI9l4SkzjbfISX7p?si=5affc650f32b402c"
+  },
+  {
+    "id": "tell-your-world-miku-kz",
+    "title": "Tell Your World",
+    "titleKana": "てる・ゆあ・わーるど",
+    "producerId": "kz",
+    "vocalId": "hatsune-miku",
+    "youtubeId": "PqJNc9KVIZE",
+    "niconicoId": "",
+    "tags": ["初音ミク", "エレクトロポップ", "VOCALOID"],
+    "released": "2012-03-12",
+    "summary": "kz（livetune）によるエレクトロポップ楽曲。",
+    "lyricsLink": "https://utaten.com/lyric/jb41209090",
+    "karaokeLink": "https://youtu.be/rvRbxl3T1vc",
+    "streamingLink": "https://open.spotify.com/intl-ja/track/6kBNaF6seD0JqFl4aBJ55e?si=1068e072b3914ee8"
   }
 ]
+
 
 
 
