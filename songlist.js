@@ -62,8 +62,10 @@ function card(s){
 
   return `
     <a class="card cardLink" href="./song.html?id=${encodeURIComponent(s.id)}">
-      <h2 class="title">${escapeHtml(s.title)}</h2>
-      ${s.titleKana ? `<p class="muted">ふりがな：${escapeHtml(s.titleKana)}</p>` : ""}
+      <h2 class="title">
+        ${escapeHtml(s.title)}
+        ${s.titleKana ? `<span class="reading">(${escapeHtml(s.titleKana)})</span>` : ""}
+      </h2>
       <p class="muted">${escapeHtml(pObj.name||"不明")} / ${escapeHtml(vObj.name||"不明")}</p>
       ${s.released ? `<p class="muted">🗓 ${escapeHtml(s.released)}</p>` : ""}
       ${s.summary ? `<p class="muted">${escapeHtml(s.summary)}</p>` : ""}
@@ -119,3 +121,4 @@ main()
 q.addEventListener("input", filter)
 sortSel.addEventListener("change", filter)
 tagSel.addEventListener("change", filter)
+
