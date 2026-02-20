@@ -29,7 +29,10 @@ async function main(){
     `
 
     content.innerHTML = `
-      <h2 class="title">${escapeHtml(p.name)}</h2>
+      <h2 class="title">
+        ${escapeHtml(p.name)}
+        ${p.nameKana ? `<span class="reading">(${escapeHtml(p.nameKana)})</span>` : ""}
+      </h2>
       ${p.activeYears ? `<p class="muted">活動：${escapeHtml(p.activeYears)}</p>` : ""}
       ${p.aliases?.length ? `<p class="muted">別名：${p.aliases.map(escapeHtml).join(" / ")}</p>` : ""}
       ${p.summary ? `<p>${escapeHtml(p.summary)}</p>` : ""}
@@ -56,3 +59,4 @@ async function main(){
   }
 }
 main()
+
