@@ -13,8 +13,10 @@ function render(items){
   count.textContent = `${items.length} 件`
   list.innerHTML = items.map(v=>`
     <a class="card cardLink" href="./vocal.html?id=${encodeURIComponent(v.id)}">
-      <h2>${escapeHtml(v.name)}</h2>
-      ${v.nameKana ? `<p class="muted">ふりがな：${escapeHtml(v.nameKana)}</p>` : ""}
+      <h2 class="title">
+        ${escapeHtml(v.name)}
+        ${v.nameKana ? `<span class="reading">(${escapeHtml(v.nameKana)})</span>` : ""}
+      </h2>
       <p class="muted">${escapeHtml(v.engine||"")}</p>
     </a>
   `).join("")
@@ -39,3 +41,4 @@ async function main(){
 
 main()
 q.addEventListener("input", filter)
+
