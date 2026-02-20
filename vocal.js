@@ -28,7 +28,10 @@ async function main(){
     `
 
     content.innerHTML = `
-      <h2 class="title">${escapeHtml(v.name)}</h2>
+      <h2 class="title">
+        ${escapeHtml(v.name)}
+        ${v.nameKana ? `<span class="reading">(${escapeHtml(v.nameKana)})</span>` : ""}
+      </h2>
       ${v.engine ? `<p class="muted">エンジン：${escapeHtml(v.engine)}</p>` : ""}
       ${v.summary ? `<p>${escapeHtml(v.summary)}</p>` : ""}
       ${linkHtml}
@@ -54,3 +57,4 @@ async function main(){
   }
 }
 main()
+
