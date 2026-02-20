@@ -9,7 +9,7 @@
     "voiceProvider": "花譜",
     "summary": "音楽的同位体プロジェクトから誕生した音声合成ソフト。",
     "links": {
-      "official": "https://kaf-u.kamitsubaki.jp",
+      "official": "https://musical-isotope.kamitsubaki.jp/product/kafu",
       "wikipedia": "https://ja.wikipedia.org/wiki/可不"
     }
   },
@@ -28,4 +28,5 @@
     }
   }
 ]
+
 
